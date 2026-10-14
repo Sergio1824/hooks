@@ -12,6 +12,7 @@ def verificar_push(comando):
 
     proyecto = Path(__file__).resolve().parents[1] / "proyecto-demo"
     try:
+        # Ejecutar la suite antes de permitir que el push continúe.
         resultado = subprocess.run(
             [sys.executable, "-B", "-m", "unittest", "discover", "-s", "tests", "-v"],
             cwd=proyecto,
