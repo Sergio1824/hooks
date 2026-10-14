@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
-
+#fgegdfgdfgdfgdfg
 # xsdcs
 def verificar_push(comando):
     # Incluye git push, git.exe push y opciones globales como git -C ruta push.
